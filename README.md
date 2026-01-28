@@ -54,7 +54,7 @@ class JoshLowe:
     def __init__(self):
         self.location = "Orlando, FL"
         self.education = "M.S. CS @ UCF"
-        self.role = "Research Assistant @ EXceL-Lab"
+        self.role = "Research Assistant at AI MIND Lab @ UCF"
         
     def current_work(self):
         return {
