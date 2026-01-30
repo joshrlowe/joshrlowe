@@ -23,27 +23,24 @@
 
 <!-- Header Banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Josh%20Lowe&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=ML%20Engineer%20|%20Researcher%20|%20Builder&descAlignY=52&descAlign=50"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=21&height=180&section=header&text=Josh%20Lowe&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=ML%20Engineer%20|%20Researcher%20|%20Builder&descAlignY=52&descAlign=50"/>
 </p>
 
 <!-- Animated Typing -->
 <p align="center">
   <a href="https://github.com/DenverCoder1/readme-typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=M.S.+Computer+Science+%40+UCF;Research+Assistant+at+EXceL-Lab+%40+UCF" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=13547a&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=M.S.+Computer+Science+%40+UCF;Research+Assistant+at+AI+MIND+Lab+%40+UCF" alt="Typing SVG" />
   </a>
 </p>
 
 <!-- Social Badges -->
 <p align="center">
-  <a href="https://jlowe.ai"><img src="https://img.shields.io/badge/Portfolio-jlowe.ai-6366F1?style=for-the-badge&logo=safari&logoColor=white"/></a>
-  <a href="https://linkedin.com/in/joshrlowe"><img src="https://img.shields.io/badge/LinkedIn-josh%20lowe-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="mailto:josh@jlowe.ai"><img src="https://img.shields.io/badge/Email-josh%40jlowe.ai-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://jlowe.ai"><img src="https://img.shields.io/badge/jlowe.ai-13547a?style=for-the-badge&logo=safari&logoColor=white"/></a>
+  <a href="https://linkedin.com/in/joshrlowe"><img src="https://img.shields.io/badge/LinkedIn-13547a?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="mailto:joshlowe.cs@gmail.com"><img src="https://img.shields.io/badge/Email-80d0c7?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://ucf.joinhandshake.com/profiles/joshrlowe"><img src="https://img.shields.io/badge/Handshake-80d0c7?style=for-the-badge&logo=handshake&logoColor=white"/></a>
 </p>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=joshrlowe&style=for-the-badge&color=6366F1&label=Profile+Views"/>
-  <img src="https://img.shields.io/github/followers/joshrlowe?style=for-the-badge&color=6366F1&labelColor=1F2937&logo=github&label=Followers"/>
-</p>
 
 ---
 
@@ -53,15 +50,18 @@
 class JoshLowe:
     def __init__(self):
         self.location = "Orlando, FL"
-        self.education = "M.S. CS @ UCF"
+        self.education = ["M.S. CS @ UCF", "B.S. CS @ FSU", "B.S. Math @ FSU"]
         self.role = "Research Assistant at AI MIND Lab @ UCF"
         
-    def current_work(self):
+    def current_research(self):
+        return "Fine-tuning VLMs for automated cardiac cine-MRI analysis"
+    
+    def projects(self):
         return {
-            "research": "CardioVLM - VQA for Cardiac MRI",
-            "focus": ["Vision-Language Models", "Medical AI"]
+            "research": ["CardioVLM", "Automated Program Repair", "Federated Learning Privacy", "NutriLLaVA"],
+            "web_apps": ["jlowe.ai", "SWESphere", "Ace Service Group", "Hacked News"],
+            "systems": ["Barstool Scheduler", "C Shell"]
         }
-  
 ```
 
 ---
@@ -77,7 +77,7 @@ class JoshLowe:
 
 Building VQA systems that enable natural language queries about cardiac function and pathology using the ACDC dataset.
 
-`PyTorch` `HuggingFace` `Medical Imaging` `VLMs`
+`Hugging Face` `Medical Imaging` `VLMs` `VQA`
 
 </td>
 <td width="50%" valign="top">
@@ -106,7 +106,7 @@ Developing an automated program repair tool that leverages static analysis and m
 
 Compared LLaVA 1.5 vs 1.6 for food recognition, achieving significant performance improvements in nutritional content estimation.
 
-`LLaVA` `Computer Vision` `Nutrition` `Benchmarking`
+`Hugging Face` `PyTorch` `LLaVA` `Benchmarking` `Computer Vision`
 
 </td>
 <td width="50%" valign="top">
@@ -116,7 +116,7 @@ Compared LLaVA 1.5 vs 1.6 for food recognition, achieving significant performanc
 
 Evaluated mitigation strategies for membership inference attacks in federated learning environments, analyzing privacy-preserving techniques.
 
-`Federated Learning` `Privacy` `Security` `Differential Privacy`
+`PyTorch` `Federated Learning` `Privacy` `Security` `Differential Privacy`
 
 </td>
 </tr>
@@ -183,7 +183,7 @@ Evaluated mitigation strategies for membership inference attacks in federated le
 ### Contribution Graph
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=joshrlowe&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=6366F1&line=6366F1&point=FFFFFF&area=true&area_color=6366F1" alt="Contribution Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=joshrlowe&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=80d0c7&line=80d0c7&point=FFFFFF&area=true&area_color=13547a" alt="Contribution Graph"/>
 </p>
 
 <!-- Snake animation (uncomment after running the workflow on GitHub)
@@ -198,22 +198,98 @@ Evaluated mitigation strategies for membership inference attacks in federated le
 
 ---
 
-### Featured Projects
+### Projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### Ace Service Group LLC
+**Professional Marketing Website**
+
+![Completed](https://img.shields.io/badge/Completed-22C55E?style=flat-square)
+
+Marketing website with admin CMS for a construction company, featuring 3D animated logo and full content management.
+
+`Next.js` `React` `TypeScript` `Tailwind`
+
+</td>
+<td width="50%" valign="top">
+
+#### SWESphere
+**Full-Stack Social Media Platform**
+
+![In Progress](https://img.shields.io/badge/In_Progress-80d0c7?style=flat-square)
+
+Twitter-like platform with web, API, and mobile apps supporting real-time notifications and multi-language i18n.
+
+`Python` `Flask` `FastAPI` `React Native`
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### jlowe.ai
+**Personal Portfolio**
+
+![In Progress](https://img.shields.io/badge/In_Progress-80d0c7?style=flat-square)
+
+Portfolio with bold space theme, 3D animations, comprehensive admin panel, and blog with analytics.
+
+`Next.js` `React` `PostgreSQL` `Tailwind`
+
+</td>
+<td width="50%" valign="top">
+
+#### Barstool Scheduler
+**Linux Kernel Module**
+
+![Completed](https://img.shields.io/badge/Completed-22C55E?style=flat-square)
+
+Bar simulation with waiters, customers, tables, and waiting queues using kthreads and system calls.
+
+`C` `Linux Kernel API` `Procfs`
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### C Shell
+**Custom Unix Shell**
+
+![Completed](https://img.shields.io/badge/Completed-22C55E?style=flat-square)
+
+Unix shell implementation featuring command parsing, I/O redirection, piping, and background processes.
+
+`C` `GCC` `Make`
+
+</td>
+<td width="50%" valign="top">
+
+#### Hacked News
+**Secure News Aggregation**
+
+![Completed](https://img.shields.io/badge/Completed-22C55E?style=flat-square)
+
+News aggregation site powered by Hacker News API with Auth0 authentication and automated hourly updates.
+
+`Python` `Flask` `SQLite3` `Auth0`
+
+</td>
+</tr>
+</table>
 
 <p align="center">
-  <a href="https://github.com/joshrlowe/CardioVLM">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=joshrlowe&repo=CardioVLM&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=6366F1&text_color=C9D1D9"/>
-  </a>
-  <a href="https://github.com/joshrlowe/jlowe.ai">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=joshrlowe&repo=jlowe.ai&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=6366F1&text_color=C9D1D9"/>
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/joshrlowe/NutriLLaVA">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=joshrlowe&repo=NutriLLaVA&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=6366F1&text_color=C9D1D9"/>
-  </a>
-  <a href="https://github.com/joshrlowe/Hacked-News">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=joshrlowe&repo=Hacked-News&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=6366F1&text_color=C9D1D9"/>
+  <a href="https://jlowe.ai/projects">
+    <img src="https://img.shields.io/badge/View_All_Projects-jlowe.ai-13547a?style=for-the-badge"/>
   </a>
 </p>
 
@@ -224,18 +300,26 @@ Evaluated mitigation strategies for membership inference attacks in federated le
 ```
 EDUCATION
 ├── M.S. Computer Science @ UCF (2025-2027)
-│   └── 4.0 GPA • Research Assistant • EXceL-Lab
+│   └── 4.0 GPA • Research Assistant • AI MIND Lab
 ├── B.S. Computer Science @ FSU (2019-2023)
 └── B.S. Mathematics @ FSU (2019-2023)
 
 EXPERIENCE
-├── Research Assistant @ UCF EXceL-Lab
-│   └── Vision-Language Models • Medical AI
+├── Research Assistant @ UCF AI MIND Lab
 ├── QA Engineer Intern @ CSC
-│   └── Azure DevOps • Cypress • Fintech
 └── Tech Lead @ Google DSC FSU
-    └── Community • Workshops • Development
 ```
+
+<details>
+<summary><b>Leadership Experience</b></summary>
+<br>
+
+- **Tech Lead** @ Google Developer Student Clubs - Mentored 40+ students
+- **Union Board Policy Chairman** @ FSU SGA - Redesigned 100+ page policy manual
+- **VP of Programming** @ IFC FSU - Managed 1,610 members, co-created $5K scholarship
+- **AWS Certified Developer - Associate**
+
+</details>
 
 ---
 
@@ -245,7 +329,7 @@ EXPERIENCE
 
 <p align="center">
   <a href="https://jlowe.ai">
-    <img src="https://img.shields.io/badge/Visit_My_Portfolio-jlowe.ai-6366F1?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Visit_My_Portfolio-jlowe.ai-13547a?style=for-the-badge"/>
   </a>
 </p>
 
@@ -253,7 +337,7 @@ EXPERIENCE
 
 <!-- Footer Wave -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=21&height=100&section=footer"/>
 </p>
 
 <!--
