@@ -58,9 +58,22 @@ class JoshLowe:
     
     def projects(self):
         return {
-            "research": ["CardioVLM", "Automated Program Repair", "Federated Learning Privacy", "NutriLLaVA"],
-            "web_apps": ["jlowe.ai", "SWESphere", "Ace Service Group", "Hacked News"],
-            "systems": ["Barstool Scheduler", "C Shell"]
+            "research": [
+                "CardioVLM", 
+                "Automated Program Repair", 
+                "Federated Learning Privacy", 
+                "NutriLLaVA"
+                ],
+            "web_apps": [
+              "jlowe.ai", 
+              "SWESphere", 
+              "Ace Service Group", 
+              "Hacked News"
+              ],
+            "systems": [
+              "Barstool Scheduler", 
+              "C Shell"
+              ]
         }
 ```
 
@@ -82,12 +95,12 @@ Building VQA systems that enable natural language queries about cardiac function
 </td>
 <td width="50%" valign="top">
 
-#### Automated Program Repair
-**Intelligent Code Fixing Tool**
+#### [Automated Program Repair](https://www.jlowe.ai/projects/llm-apr-benchmark)
+**Which LLM Fixes It Best? A Comparative Study**
 
-Developing an automated program repair tool that leverages static analysis and machine learning to detect and fix software bugs.
+Custom APR tool that accepts a codebase path, error message, and model selection to automatically diagnose and fix software bugs. Benchmarks state-of-the-art LLMs from Anthropic, OpenAI, Google, and xAI on repair success across diverse bug categories to provide actionable guidelines for model selection.
 
-`Program Analysis` `AST` `Bug Detection` `Code Repair`
+`Python` `OpenAI API` `Anthropic API` `Google Gemini API`
 
 </td>
 </tr>
@@ -101,26 +114,130 @@ Developing an automated program repair tool that leverages static analysis and m
 <tr>
 <td width="50%" valign="top">
 
-#### NutriLLaVA
-**Multimodal AI for Nutrition Analysis**
+#### [Federated Learning Privacy](https://www.jlowe.ai/projects/mia-mitigation-in-fed-learning)
+**Evaluating Mitigation Strategies for Membership Inference Attacks in Federated Learning**
 
-Compared LLaVA 1.5 vs 1.6 for food recognition, achieving significant performance improvements in nutritional content estimation.
+Implements federated learning to train Wide ResNet 28-4 on CIFAR-100 and evaluates differential privacy as a defense against membership inference attacks. Produced counterintuitive findings: DP caused accuracy to drop 86% while attack success increased from 70.6% to 84.3% on overfit models.
 
-`Hugging Face` `PyTorch` `LLaVA` `Benchmarking` `Computer Vision`
-
-</td>
-<td width="50%" valign="top">
-
-#### Federated Learning Privacy
-**Membership Inference Attack Mitigation**
-
-Evaluated mitigation strategies for membership inference attacks in federated learning environments, analyzing privacy-preserving techniques.
-
-`PyTorch` `Federated Learning` `Privacy` `Security` `Differential Privacy`
+`Python` `PyTorch` `Flower` `Opacus` `ART` `NumPy` `Scikit-learn` `Ray`
 
 </td>
 </tr>
 </table>
+
+---
+
+### Projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### [NutriLLaVA](https://www.jlowe.ai/projects/nutrillava)
+**Multimodal AI for Personalized Recipes**
+
+![Completed](https://img.shields.io/badge/Completed-22C55E?style=flat-square) ![Featured](https://img.shields.io/badge/Featured-FFD700?style=flat-square)
+
+Large Multimodal Model app that generates personalized recipes from fridge/pantry photos based on dietary goals. Comparative study between LLaVA 1.5 (7B) and 1.6 (34B) revealed upgrading improved success rates from 32.5% to 77.5%, with ingredient hallucination as the key differentiator.
+
+`Python` `PyTorch` `Hugging Face` `LLaVA 1.6` `Gradio` `Pillow` `Google Colab`
+
+</td>
+<td width="50%" valign="top">
+
+#### [Ace Service Group LLC](https://www.jlowe.ai/projects/ace-service-group)
+**Professional Marketing Website**
+
+![Completed](https://img.shields.io/badge/Completed-22C55E?style=flat-square)
+
+Full-stack marketing website for a PA construction company featuring a striking 3D animated playing card logo using Three.js and React Three Fiber. Includes complete admin dashboard with portfolio management, dynamic services, and contact form submissions with IP-based rate limiting.
+
+`Next.js` `TypeScript` `Prisma` `PostgreSQL` `Three.js` `GSAP` `NextAuth` `Tailwind`
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### [jlowe.ai](https://www.jlowe.ai/projects/jlowe-ai)
+**Personal Portfolio**
+
+![In Progress](https://img.shields.io/badge/In_Progress-80d0c7?style=flat-square) ![Featured](https://img.shields.io/badge/Featured-FFD700?style=flat-square)
+
+Full-stack portfolio with immersive "Supernova" space theme featuring Three.js animated starfield and GSAP scroll animations. Includes admin CMS, blog with comments/likes, newsletter subscriptions, and comprehensive testing with 256 E2E tests across 4 browsers using Playwright.
+
+`Next.js` `TypeScript` `Prisma` `Three.js` `GSAP` `Playwright` `Jest` `Tailwind`
+
+</td>
+<td width="50%" valign="top">
+
+#### [SWESphere](https://www.jlowe.ai/projects/swesphere)
+**Full-Stack Social Media Platform**
+
+![In Progress](https://img.shields.io/badge/In_Progress-80d0c7?style=flat-square)
+
+Comprehensive Twitter-like platform spanning SvelteKit web, FastAPI backend with Celery workers, and Flutter mobile app with Clean Architecture. Features real-time WebSocket notifications, 12+ language i18n, and security-focused implementation with CSP, CSRF protection, and rate limiting.
+
+`FastAPI` `SvelteKit` `Flutter` `PostgreSQL` `Redis` `Celery` `Docker` `Nginx`
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### [Barstool Scheduler](https://www.jlowe.ai/projects/barstool-scheduler)
+**Linux Kernel Module**
+
+![Completed](https://img.shields.io/badge/Completed-22C55E?style=flat-square)
+
+Multi-part Linux kernel programming project demonstrating custom system call implementation, kernel module development, and concurrent programming. Features bar simulation where customers are seated at tables managed by a waiter kthread with mutex synchronization and procfs state exposure.
+
+`C` `Linux Kernel API` `Procfs` `Kthreads` `Mutex` `Make`
+
+</td>
+<td width="50%" valign="top">
+
+#### [C Shell](https://www.jlowe.ai/projects/c-shell)
+**Custom Unix Shell**
+
+![Completed](https://img.shields.io/badge/Completed-22C55E?style=flat-square)
+
+Unix shell implementation with tokenization, environment variable expansion, tilde expansion, and PATH-based executable resolution. Supports I/O redirection, command piping (up to two pipes), background process execution, and built-in commands including cd, echo, jobs, and exit.
+
+`C` `GCC` `Make` `POSIX` `Fork` `File Descriptors`
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### [Hacked News](https://www.jlowe.ai/projects/hacked-news)
+**Secure News Aggregation**
+
+![Completed](https://img.shields.io/badge/Completed-22C55E?style=flat-square)
+
+Full-stack news aggregator powered by Hacker News API with Auth0 OAuth and role-based access control. Achieved 110/100 Mozilla Observatory score through comprehensive security headers, HTTPS via Certbot, and runs on DigitalOcean with Nginx reverse proxy and cron-based article fetching.
+
+`Python` `Flask` `SQLite3` `Auth0` `Nginx` `Gunicorn` `Certbot` `DigitalOcean`
+
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <a href="https://jlowe.ai/projects">
+    <img src="https://img.shields.io/badge/View_All_Projects-jlowe.ai-13547a?style=for-the-badge"/>
+  </a>
+</p>
 
 ---
 
@@ -195,103 +312,6 @@ Evaluated mitigation strategies for membership inference attacks in federated le
   </picture>
 </p>
 -->
-
----
-
-### Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-#### Ace Service Group LLC
-**Professional Marketing Website**
-
-![Completed](https://img.shields.io/badge/Completed-22C55E?style=flat-square)
-
-Marketing website with admin CMS for a construction company, featuring 3D animated logo and full content management.
-
-`Next.js` `React` `TypeScript` `Tailwind`
-
-</td>
-<td width="50%" valign="top">
-
-#### SWESphere
-**Full-Stack Social Media Platform**
-
-![In Progress](https://img.shields.io/badge/In_Progress-80d0c7?style=flat-square)
-
-Twitter-like platform with web, API, and mobile apps supporting real-time notifications and multi-language i18n.
-
-`Python` `Flask` `FastAPI` `React Native`
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-#### jlowe.ai
-**Personal Portfolio**
-
-![In Progress](https://img.shields.io/badge/In_Progress-80d0c7?style=flat-square)
-
-Portfolio with bold space theme, 3D animations, comprehensive admin panel, and blog with analytics.
-
-`Next.js` `React` `PostgreSQL` `Tailwind`
-
-</td>
-<td width="50%" valign="top">
-
-#### Barstool Scheduler
-**Linux Kernel Module**
-
-![Completed](https://img.shields.io/badge/Completed-22C55E?style=flat-square)
-
-Bar simulation with waiters, customers, tables, and waiting queues using kthreads and system calls.
-
-`C` `Linux Kernel API` `Procfs`
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-#### C Shell
-**Custom Unix Shell**
-
-![Completed](https://img.shields.io/badge/Completed-22C55E?style=flat-square)
-
-Unix shell implementation featuring command parsing, I/O redirection, piping, and background processes.
-
-`C` `GCC` `Make`
-
-</td>
-<td width="50%" valign="top">
-
-#### Hacked News
-**Secure News Aggregation**
-
-![Completed](https://img.shields.io/badge/Completed-22C55E?style=flat-square)
-
-News aggregation site powered by Hacker News API with Auth0 authentication and automated hourly updates.
-
-`Python` `Flask` `SQLite3` `Auth0`
-
-</td>
-</tr>
-</table>
-
-<p align="center">
-  <a href="https://jlowe.ai/projects">
-    <img src="https://img.shields.io/badge/View_All_Projects-jlowe.ai-13547a?style=for-the-badge"/>
-  </a>
-</p>
 
 ---
 
