@@ -68,9 +68,10 @@ class JoshLowe:
               "jlowe.ai", 
               "SWESphere", 
               "Ace Service Group", 
-              "Hacked News"
+              "Mailsweep"
               ],
             "systems": [
+              "jarvis", 
               "Barstool Scheduler", 
               "C Shell"
               ]
@@ -101,6 +102,21 @@ Building VQA systems that enable natural language queries about cardiac function
 Custom APR tool that accepts a codebase path, error message, and model selection to automatically diagnose and fix software bugs. Benchmarks state-of-the-art LLMs from Anthropic, OpenAI, Google, and xAI on repair success across diverse bug categories to provide actionable guidelines for model selection.
 
 `Python` `OpenAI API` `Anthropic API` `Google Gemini API`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### [Dynamic APR on SWE-bench Lite](https://github.com/joshrlowe/swebench-lite-dynamic-apr)
+**Cross-model automated program repair**
+
+Research experiment that runs dynamic, cross-model APR on SWE-bench Lite. Continues the comparative LLM-repair line with a public, reproducible pipeline.
+
+`Python` `SWE-bench` `LLMs`
+
+</td>
+<td width="50%" valign="top">
 
 </td>
 </tr>
@@ -220,14 +236,26 @@ Unix shell implementation with tokenization, environment variable expansion, til
 <tr>
 <td width="50%" valign="top">
 
-#### [Hacked News](https://www.jlowe.ai/projects/hacked-news)
-**Secure News Aggregation**
+#### [jarvis](https://github.com/joshrlowe/jarvis)
+**Self-hosted personal AI assistant**
 
-![Completed](https://img.shields.io/badge/Completed-22C55E?style=flat-square)
+![In Progress](https://img.shields.io/badge/In_Progress-80d0c7?style=flat-square)
 
-Full-stack news aggregator powered by Hacker News API with Auth0 OAuth and role-based access control. Achieved 110/100 Mozilla Observatory score through comprehensive security headers, HTTPS via Certbot, and runs on DigitalOcean with Nginx reverse proxy and cron-based article fetching.
+Monorepo for a local assistant: LangGraph gateway, memory, voice, local-model routing, MCP skills, and a sandbox. Contract-first (Pydantic contracts, generated TypeScript, mock servers). Still early.
 
-`Python` `Flask` `SQLite3` `Auth0` `Nginx` `Gunicorn` `Certbot` `DigitalOcean`
+`Python` `TypeScript` `LangGraph` `pnpm` `uv` `Docker`
+
+</td>
+<td width="50%" valign="top">
+
+#### [Mailsweep](https://github.com/joshrlowe/email-cleaner)
+**Local-first Gmail cleanup**
+
+![In Progress](https://img.shields.io/badge/In_Progress-80d0c7?style=flat-square)
+
+Gmail sweeper that works from metadata only, with undoable batches and an optional Claude natural-language bar. Next.js app, BullMQ worker, Prisma/Postgres, Redis.
+
+`TypeScript` `Next.js` `Prisma` `BullMQ` `Gmail API`
 
 </td>
 </tr>
